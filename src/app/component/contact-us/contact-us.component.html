@@ -7,11 +7,24 @@
 
                     
                     <div class="emailDiv">
-                        <form action="https://formsubmit.co/indira.majumder1707@gmail.com" method="post">
-                            <input type="text" name="name" placeholder="Name" id="name" required>
-                            <input type="email" name="email" placeholder="Email-id"  id="email" required>
-                            <input type="text" name="subject" placeholder="Subject"  id="subject" required>
-                            <textarea name="Message"  cols="30" rows="5" placeholder="Message" required></textarea>
+                       
+                        <form action="https://formsubmit.co/indira.majumder1707@gmail.com" method="POST">
+                            <div class="item d-flex justify-content-between align-items-center">
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" placeholder="Name" id="name" required>
+                            </div>
+                            <div class="item d-flex justify-content-between align-items-center">
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" placeholder="Email-id"  id="email" required>
+                            </div>
+                            <div class="item d-flex justify-content-between align-items-center">
+                                <label for="subject">Subject:</label>
+                                <input type="text" name="subject" placeholder="Subject"  id="subject" required>
+                            </div>
+                            <div class="item d-flex justify-content-between">
+                                <label for="message">Message:</label>
+                                <textarea name="Message"  cols="30" rows="5" placeholder="Message" required></textarea>
+                            </div>
                             <input type="hidden" name="_next" value="http://localhost:4200/contact">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_template" value="table">
@@ -20,8 +33,9 @@
             
                         </form>
                     </div>
-                    <div class="WhatsappUs">
-                       <!-- <a class="btn btn-primary" href="https://web.whatsapp.com/">Whatsapp</a>-->
+                    <div class="map">
+                        <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=23.36999258703044~86.32850646972656&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+                        </iframe>
                     </div>
                     
                 </div>
