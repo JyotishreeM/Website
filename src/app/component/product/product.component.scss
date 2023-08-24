@@ -1,0 +1,40 @@
+p{
+    font-size: 1.6rem;
+}
+button{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+section{
+    margin-top: 8rem;
+    padding-left:8rem;
+    padding-right: 8rem;
+    .headerSection{
+        h1{
+            font-size:56px;
+        }
+        
+    }
+    .productVideo{
+        box-shadow: rgb(3, 3, 3 ,0.1) 0px 0px 20px;
+        margin-top: 8rem;
+    }
+    .productAi{
+        margin-top: 8rem;
+        display: flex;
+        column-gap: 4rem;
+        margin-bottom: 8rem;
+        .AiVideo{
+            width: 55%;
+            box-shadow: rgb(3, 3, 3 ,0.1) 0px 0px 20px;
+        } 
+        .AiDetails{
+            width: 45%;
+            margin-left: 4rem;
+        }
+    }
+   .addbtn{
+    float:right;
+    
+   }
+}

@@ -1,0 +1,82 @@
+<section class="Product">
+    <div class="headerSection">
+        <h1 class="text-center">Design made easy.</h1>
+        <p class="text-center">
+            Design mobile apps, web apps, websites, and desktop software in minutes.
+            <br>
+            UI design has never been so simple. If you can use Google Slides or Powerpoint then you
+            <br>
+            can use Uizard!
+        </p>
+        <div class="buttonContainer text-center">
+            <button class="btn btn-warning fw-bold">Try it for free</button>
+        </div>
+    </div>
+    <div class="productVideo">
+        <video width="100%" height="100%" autoplay loop>
+            <source src="./assets/images/product1.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+    </div>
+    <div class="productAi">
+      <div class="AiVideo">
+        <video width="100%" height="100%" autoplay loop>
+            <source src="./assets/images/aiProduct.mp4" type="video/mp4">
+           
+            Your browser does not support the video tag.
+          </video>
+      </div> 
+      <div class="AiDetails">
+        <div class="detailsContainer">
+            <h5 class="text-muted">Artificial Intelligence</h5>
+            <h2 class="fw-bold">Design with ai</h2>
+            <br>
+            <p>Gone are the days of tedious, time-consuming design work.
+                 Bring your creative vision to life with the help of a cutting-edge 
+                 AI assistant. Whether you're a seasoned designer or a beginner, 
+                Uizard makes it easy to create stunning designs
+                 that look like they were crafted by a pro.</p>
+            <button class="btn btn-outline-warning text-dark">read more</button>
+        </div>
+      </div> 
+    </div>
+    <button class="addbtn btn btn-warning" data-toggle="modal" data-target="#exampleModal" type="button" (click)="OnClickBtn()">Add</button>
+    <!--modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--table-->
+    <table class="table table-striped table-bordered table-sm row-border hover" datatable [dtOptions]="dtOptions">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Website</th>
+        </tr>
+      </thead>
+      <tbody>
+       <tr *ngFor="let group of data">
+             <td>{{group.name}}</td>
+             <td>{{group.email}}</td>
+             <td>{{group.website}}</td>
+         </tr>
+      </tbody>
+    </table>
+</section>

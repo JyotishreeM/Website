@@ -1,0 +1,40 @@
+<section class="login">
+    <div class="container-fluid">
+        <h1 class="text-center">Register ..</h1>
+        <div class="cardContainer ">
+           
+            <form>
+                <div class="fname d-flex justify-content-between">
+                    <label >FirstName :</label>
+                    <input type="text" (keypress)="fname($event)" required>
+                </div>
+                <div class="lname mt-2 d-flex justify-content-between">
+                    <label >LastName :</label>
+                    <input type="text" (keypress)="fname($event)" required>
+                </div>
+                <div class="uname mt-2 d-flex justify-content-between">
+                    <label >UserName :</label>
+                    <input type="text" (keypress)="Username($event)" required >
+                </div>
+                <div class="email mt-2 d-flex justify-content-between">
+                    <label >Email Id :</label>
+                    <input type="email" (keypress)="emailInput($event)" required>
+                </div>
+                <div class="password mt-2 d-flex justify-content-between">
+                    <label >password  :</label>
+                    <input type="password" maxlength="21" minlength="8" required>
+                </div>
+                <div class="bdate mt-2 d-flex justify-content-between">
+                    <label >DOB :</label>
+                    <input type="date" min="1900-01-01" max={{maxDate}} required>
+                </div>
+
+                <div class="btn d-flex justify-content-center">
+                    <button class="btn btn-warning mt-2 " type="submit">Login</button>
+                </div>
+            </form>
+
+            <p class="newUser">Allready have an account? <a routerLink="/login">login</a> here</p>
+        </div>
+    </div>
+</section>

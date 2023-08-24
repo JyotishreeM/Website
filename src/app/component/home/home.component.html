@@ -1,0 +1,72 @@
+
+<section class="home">
+    <div class="container-fluid">
+        <div class="textDetails">
+            <h1 >Design stunning
+            <span *ngFor="let items of fruits">{{items.name|slice:0:3}}</span><br>
+            <span>in minutes</span>
+            </h1>
+            <br>
+          <p> Visualize and communicate your ideas effortlessly.
+            <br>
+            No design experience required!</p>
+            <input minlength="1" maxlength="6" required>
+        </div>
+        <div class="imageDetails">
+            <video width="100%" height="100%" autoplay loop>
+                <source src="./assets/images/home1.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+        </div>
+    </div> 
+    <div class="companies text-center ">
+        <h4 class="text-muted">Trusted by individuals and teams at the world's boldest companies</h4>
+        <div class="container-fluid ">
+            <div class="items test-center">
+                <img src="./assets/images/ibm.png" alt="">
+            </div>
+            <div class="items">
+                <img src="./assets/images/google.png" alt="">
+            </div>
+            <div class="items">
+                <img src="./assets/images/accenture.png" alt="">
+            </div>
+            <div class="items">
+                <img src="./assets/images/tesla.png" alt="">
+            </div>
+            <div class="items">
+                <img src="./assets/images/tesla.png" alt="">
+            </div>
+        </div>
+    </div>  
+    <!--Data history--> 
+    <div class="dataHistory">
+        <h4 class="text-muted text-center">Our Products details</h4>
+       <p class="text-center"> <input  type="search" placeholder="Search here.." style="width: 200px; border-radius: 20px;padding: 5px;"></p>
+    </div>
+  
+    <div class= "container-fluid tableContainer">
+        <table class="table ">
+            <thead>
+                <th>Id</th>
+                <th>Products</th>
+                <th>price</th>
+                <th>category</th>
+                
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of product">
+                    <td>{{product.id}}</td>
+                    <td>{{product.title}}</td>
+                    <td>${{product.price}}</td>
+                    <td>{{product.category}}</td>
+                   
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
